@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Игра "Угадай число"</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        .container {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Игра "Угадай число"</h1>
-        <button class="setRangeButton">Изменить диапазон (текущий: 1-100)</button>
-        <input type="text" class="userGuess" placeholder="Введите число..." autofocus>
-        <button class="guessButton">Угадать!</button>
-        <p class="hints"></p>
-        <p class="attemptCount"></p>
-        <button class="restartButton" style="display: none;">Начать заново</button>
+      <h1>Игра "Угадай число"</h1>
+      <button class="setRangeButton">Изменить диапазон (текущий: 1-100)</button>
+      <input
+        type="text"
+        class="userGuess"
+        placeholder="Введите число..."
+        autofocus
+      />
+      <button class="guessButton">Угадать!</button>
+      <p class="hints"></p>
+      <p class="attemptCount"></p>
+      <button class="restartButton" style="display: none">Начать заново</button>
     </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
